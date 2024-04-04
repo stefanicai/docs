@@ -11,6 +11,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - navigation.indexes
   language: en
   palette:
     - scheme: default
