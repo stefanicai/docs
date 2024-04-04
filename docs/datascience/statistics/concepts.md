@@ -57,4 +57,6 @@ To remove outliers, we do the following:
 4. multiply `IQR` by `1.5`. For our case, we get `IQR * 1.5 = 7 * 1.5 = 10.5`
 5. we consider `outliers` all values that are outside the range [`Q1 - IQR*1.5`, `Q3 + IQR*1.5`]. So in our case, anything that's smaller than `Q1 - IQR*1.5 = 7 - 10.5 = -3.5`, and anything bigger than `Q3 + IQR*1.5 = 14 + 10.5 = 24.5`, will be removed from the data set.
 
+An image representation of the above steps:
+
 ![alt text](outliers.png)
