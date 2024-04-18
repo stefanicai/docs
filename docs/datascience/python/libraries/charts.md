@@ -1,4 +1,25 @@
+# Overview
+
+| Type       | X Variable                       | Y Variable  | Purpose of analysis                                                          | Type of chart                | How it looks                                                                                                                                         |
+|------------|----------------------------------|-------------|------------------------------------------------------------------------------|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Univariate | Continuous                       | -           | How the values on the X variable are distributed?                            | Histogram, Distribution plot | Histogram<br/> ![eg-dist.png](eg-hist.png) <br/>Distribution plot for car horsepower.<br/>![eg-dist-plot.png](eg-dist-plot.png)                      |
+| Univariate | Categorical                      | -           | What is the count of observations in each category of X variable?            | Count plot                   | Count plot for degree of students <br/>![eg-count-plot.png](eg-count-plot.png)                                                                       |
+| Bivariate  | Continuous                       | Continuous  | How Y is correlated to X?                                                    | Scatter plot                 | Scatter plot restaurant bill vs tip <br/>![eg-scatter-plot.png](eg-scatter-plot.png)                                                                 |
+| Bivariate  | Time related (months, hours etc) | Continuous  | How Y changes over time?                                                     | Line plot                    | Line plot of sales over a 10 days period <br/>![eg-line-plot.png](eg-line-plot.png)                                                                  |
+| Bivariate  | Continuous                       | Categorical | How range of X varies for various category levels                            | Box plot, Swarm plot         | Box plot of tip by meal time<br/>![eg-box-plot.png](eg-box-plot.png) <br/>  Swarm plot tips per week day <br/>![eg-swarm-plot.png](eg-swarm-plot.png) |
+| Bivariate  | Categorical                      | Categorical | What is the number of % of records of X which falls under each category of Y | Stacked bar plot             | Smokers/non-smokers vs fitness level <br/> ![eg-stacked-plot.png](eg-stacked-plot.png)                                                               |
+
+| Type         | Variables                | Purpose of analysis                                                      | Type of chart | How it looks |
+|--------------|--------------------------|--------------------------------------------------------------------------|---------------|--------------|
+| Multivariate | Continuous (more than 2) | How to visualize relationshipo across multiple combination of variables? | Pair plot     |              |
+| Multivariate | Continuous(more than 2)  | How to visualize the spread of values in the data with color-encoding?   | Heatmap       |              |
+
 # matplotlib & seaborn
+`matplotlib` is for basic charts, `seaborn` is able to handle more complex charts and it builds on top of `matplotlib`, so it requires that to be imported too.
+
+Some important `matplotlib` functions: `plot()`, `hist()`, `bar()`, `pie()`, `scatter()`, `text()`, `legend()`, etc.
+
+Some important `seaborn` functions: `displot()`, `boxplot()`, `stripplot()`, `pairplot()`
 
 ```python
 import matplotlib.pyplot as plt
@@ -7,8 +28,6 @@ import seaborn as sns
 # if desired, also tell python to display the charts inline 
 %matplotlib inline
 ```
-
-`matplotlib` is for basic charts, `seaborn` is able to handle more complex charts and it builds on top of `matplotlib`, so it requires that to be imported too.
 
 ## Histogram
 

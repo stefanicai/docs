@@ -114,8 +114,8 @@ stud_grades.info()
 # top 5 rows
 stud_grades.head()
 
-# no of rows and columns
-stud_grades.shape()
+# no of rows and columns. Note it's a property, not function
+stud_grades.shape
 
 # first mode in a multi mode data set. Not our case. Drop the index at the end if it's just one
 stud_grades.mode()[0]
