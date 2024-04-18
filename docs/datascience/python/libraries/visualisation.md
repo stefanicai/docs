@@ -1,4 +1,4 @@
-# Overview
+# Visualisation
 
 | Type       | X Variable                       | Y Variable  | Purpose of analysis                                                          | Type of chart                | How it looks                                                                                                                                         |
 |------------|----------------------------------|-------------|------------------------------------------------------------------------------|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -9,12 +9,12 @@
 | Bivariate  | Continuous                       | Categorical | How range of X varies for various category levels                            | Box plot, Swarm plot         | Box plot of tip by meal time<br/>![eg-box-plot.png](eg-box-plot.png) <br/>  Swarm plot tips per week day <br/>![eg-swarm-plot.png](eg-swarm-plot.png) |
 | Bivariate  | Categorical                      | Categorical | What is the number of % of records of X which falls under each category of Y | Stacked bar plot             | Smokers/non-smokers vs fitness level <br/> ![eg-stacked-plot.png](eg-stacked-plot.png)                                                               |
 
-| Type         | Variables                | Purpose of analysis                                                      | Type of chart | How it looks |
-|--------------|--------------------------|--------------------------------------------------------------------------|---------------|--------------|
-| Multivariate | Continuous (more than 2) | How to visualize relationshipo across multiple combination of variables? | Pair plot     |              |
-| Multivariate | Continuous(more than 2)  | How to visualize the spread of values in the data with color-encoding?   | Heatmap       |              |
+| Type         | Variables                | Purpose of analysis                                                      | Type of chart | How it looks                          |
+|--------------|--------------------------|--------------------------------------------------------------------------|---------------|---------------------------------------|
+| Multivariate | Continuous (more than 2) | How to visualize relationshipo across multiple combination of variables? | Pair plot     | ![eg-pair-plot.png](eg-pair-plot.png) |
+| Multivariate | Continuous(more than 2)  | How to visualize the spread of values in the data with color-encoding?   | Heatmap       | ![eg-heat-map.png](eg-heat-map.png)   |
 
-# matplotlib & seaborn
+## Libraries - matplotlib & seaborn
 `matplotlib` is for basic charts, `seaborn` is able to handle more complex charts and it builds on top of `matplotlib`, so it requires that to be imported too.
 
 Some important `matplotlib` functions: `plot()`, `hist()`, `bar()`, `pie()`, `scatter()`, `text()`, `legend()`, etc.

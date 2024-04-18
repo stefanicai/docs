@@ -4,12 +4,11 @@ Types of distributions
 ## Bernoulli
 It's either successful or not. 
 
-> E.g. has a specific adult ever posted a video online?
+E.g. has a specific adult ever posted a video online?
 
-```
- x = 1 (success/yes), with prob p
- x = 0 (fail/no), with prob 1-p
- ```
+> x = 1 (success/yes), with prob p
+>
+> x = 0 (fail/no), with prob 1-p
 
 A Bernoulli distribution is a special case of Binomial Distribution with a single trial.
 
