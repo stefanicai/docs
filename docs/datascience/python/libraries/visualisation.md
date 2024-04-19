@@ -57,7 +57,8 @@ When you want to split the data and show several histograms, you could use subpl
 g = sns.FacetGrid(df, col="body_style")
 g.map(sns.histoplot, "price")
 ```
-It would look a bit like this:
+It would look like this:
+
 ![alt text](facetgrid.png)
 
 ## Boxplot
@@ -66,7 +67,8 @@ Shows the distribution of numerical data and skewness through displaying the dat
 ```python
 sns.boxplot(data=df, x='curb_weight')
 ```
-Looks a bit like:
+Looks like this:
+
 ![alt text](boxplot.png)
 
 ```python
